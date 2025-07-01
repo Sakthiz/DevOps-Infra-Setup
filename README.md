@@ -33,6 +33,7 @@ Provision secure, scalable, and repeatable infrastructure for a fullstack app us
 
 ## 🧱 Folder Structure
 
+```bash
 .
 ├── infra/                          # Terraform configuration
 │   ├── main.tf                     # EC2, Security Group, etc.
@@ -45,3 +46,5 @@ Provision secure, scalable, and repeatable infrastructure for a fullstack app us
 │   └── workflows/
 │       └── deploy-infra.yml       # GitHub Actions workflow for infra CI/CD
 └── README.md                       # Project overview and setup guide
+```
+
