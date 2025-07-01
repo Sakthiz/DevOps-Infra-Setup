@@ -33,13 +33,15 @@ Provision secure, scalable, and repeatable infrastructure for a fullstack app us
 
 ## 🧱 Folder Structure
 
-infra/
-├── main.tf             # EC2, SG, and compute setup
-├── provider.tf         # AWS provider config
-├── variables.tf        # Input variables
-├── outputs.tf          # EC2 Public IP output
-├── terraform.tfvars    # Secret values (NOT committed)
-└── .gitignore          # Ignore state/secrets
-.github/
-└── workflows/
-    └── deploy-infra.yml  # GitHub Actions CI/CD
+.
+├── infra/                          # Terraform configuration
+│   ├── main.tf                     # EC2, Security Group, etc.
+│   ├── provider.tf                 # AWS provider config
+│   ├── variables.tf                # Input variables
+│   ├── outputs.tf                  # Output public IP
+│   ├── terraform.tfvars            # Secret values (NOT committed)
+│   └── .gitignore                  # Ignore sensitive & generated files
+├── .github/
+│   └── workflows/
+│       └── deploy-infra.yml       # GitHub Actions workflow for infra CI/CD
+└── README.md                       # Project overview and setup guide
