@@ -39,7 +39,7 @@ resource "aws_instance" "devops_ec2" {
   ami                    = "ami-0f58b397bc5c1f2e8" # Ubuntu 22.04 in ap-south-1
   instance_type          = var.instance_type
   key_name               = var.key_pair_name
-  vpc_security_group_ids = [aws_security_group.devops_sg.id]
+  vpc_security_group_ids = [aws_security_group.app_sg.id]
 
   tags = {
     Name = "app-instance"
