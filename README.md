@@ -33,7 +33,6 @@ Provision secure, scalable, and repeatable infrastructure for a fullstack app us
 
 ## 🧱 Folder Structure
 
-`bash
 infra/
 ├── main.tf             # EC2, SG, and compute setup
 ├── provider.tf         # AWS provider config
