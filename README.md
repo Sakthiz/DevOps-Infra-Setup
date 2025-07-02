@@ -34,17 +34,18 @@ Provision secure, scalable, and repeatable infrastructure for a fullstack app us
 ## 🧱 Folder Structure
 
 ```bash
-.
-├── infra/                          # Terraform configuration
-│   ├── main.tf                     # EC2, Security Group, etc.
-│   ├── provider.tf                 # AWS provider config
-│   ├── variables.tf                # Input variables
-│   ├── outputs.tf                  # Output public IP
-│   ├── terraform.tfvars            # Secret values (NOT committed)
-│   └── .gitignore                  # Ignore sensitive & generated files
+DevOps-Infra-Setup/
 ├── .github/
 │   └── workflows/
-│       └── deploy-infra.yml       # GitHub Actions workflow for infra CI/CD
-└── README.md                       # Project overview and setup guide
+│       └── deploy-infra.yml         # GitHub Actions workflow for Terraform infra
+├── infra/                           # Terraform configuration files
+│   ├── main.tf                      # EC2, security group, etc.
+│   ├── outputs.tf                   # Output public IP
+│   ├── provider.tf                  # AWS provider config
+│   ├── terraform.tfvars             # Variable values (not committed)
+│   └── variables.tf                 # Input variable definitions
+├── .gitignore                       # Ignore tfstate, tfvars, etc.
+└── README.md                        # Project overview and instructions
 ```
+---
 
